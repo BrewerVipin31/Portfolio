@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/developer.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#about" onclick="showSection('about')" class="nav-link">About</a>
+        <a href="#projects" onclick="showSection('projects')" class="nav-link">Projects</a>
+        <a href="#contact" onclick="showSection('contact')" class="nav-link">Contact</a>
+        <a href="index.html" class="home">Home</a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-container">
+        <!-- About Section -->
+        <section id="about" class="page-section active">
+            <h1>$ whoami</h1>
+            <p>An engineer and systems builder — I work at the intersection of robotics, machine learning, and autonomous systems. I write code that doesn't just run, but thinks, navigates, and adapts in the real world.</p>
+
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>AI Engineer Intern — CP Plus (Aditya Infotech Ltd.)</h4>
+                    <div class="date">May 2025 – Jun 2025</div>
+                    <p>Engineered real-time object detection and facial recognition pipelines for next-gen IP surveillance cameras. Built predictive crowd-density models using video history and deployed the system across 100+ cameras processing 100 GB+ of daily data.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Secretary — Robotics Club, IIT Kanpur</h4>
+                    <div class="date">May 2024 – Apr 2025</div>
+                    <p>Led robotics initiatives through workshops and semester-long collaborative projects. Mentored 100+ students across the month-long RoboDive program and represented the club at WRC Delhi and SnT Pavilion.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>B.Tech Aerospace Engineering — IIT Kanpur</h4>
+                    <div class="date">2023 – Present</div>
+                    <p>Junior undergraduate with coursework spanning Data Science & ML, Fluid Mechanics, Dynamics, Electronics, and Fundamentals of Computing. (CPI: 7.3/10).</p>
+                </div>
+            </div>
+
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <div class="skill-category">
+                    <h4>Languages</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>C / C++</li>
+                        <li>SQL &amp; Solidity</li>
+                        <li>HTML / CSS / React</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>ML / Data</h4>
+                    <ul>
+                        <li>PyTorch &amp; Scikit-learn</li>
+                        <li>Numpy &amp; Pandas</li>
+                        <li>Matplotlib</li>
+                        <li>MATLAB</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Robotics</h4>
+                    <ul>
+                        <li>ROS &amp; Gazebo</li>
+                        <li>Arduino</li>
+                        <li>YOLOv8 / OpenCV</li>
+                        <li>SLAM &amp; Path Planning</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Tools</h4>
+                    <ul>
+                        <li>Fusion 360 &amp; AutoCAD</li>
+                        <li>LaTeX</li>
+                        <li>Metamask / Remix / IPFS</li>
+                        <li>OpenZeppelin</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="page-section">
+            <h1>Projects</h1>
+            <p>Selected work across autonomous systems, machine learning, and decentralised tech.</p>
+
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>AI Surveillance System</h3>
+                    <p>Engineered real-time object detection and facial recognition for IP cameras at CP Plus. Built predictive models for crowd density and movement trends, deployed across 100+ cameras handling 100 GB+ of daily footage.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Predictive Modelling</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Autonomous Mars Rover Navigation</h3>
+                    <p>Built a full autonomous navigation system using YOLOv8 for terrain perception and Canny edge detection for feature recognition. Configured ROS and Gazebo for SLAM-enabled real-time mapping, localization, and collision-free path planning.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">ROS</span>
+                        <span class="tech-tag">Gazebo</span>
+                        <span class="tech-tag">YOLOv8</span>
+                        <span class="tech-tag">SLAM</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Underwater Garbage Collector</h3>
+                    <p>Designed a robotic system for detecting and collecting marine debris from coral reefs. Built an underwater garbage detector using a neural network with 80% accuracy, under guidance of Prof. Amar Behera, IIT Kanpur.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Neural Networks</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Robotics</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Micromouse Maze Solver</h3>
+                    <p>Implemented the Flood Fill algorithm on a competitive bot, cutting maze-solving time by 30%. Optimised motor control with PID for precise wall detection and sharp turns — competed against 50+ global teams at Technoxian WRC 2024 with zero system failures.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">PID Control</span>
+                        <span class="tech-tag">Flood Fill</span>
+                        <span class="tech-tag">Arduino</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Blockchain Degree Verification DApp</h3>
+                    <p>Built a decentralised application for tamper-proof degree verification on the Ethereum Sepolia testnet. Wrote Solidity smart contracts using OpenZeppelin standards, deployed via Metamask and Remix, with IPFS document storage through Pinata.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Solidity</span>
+                        <span class="tech-tag">Ethereum</span>
+                        <span class="tech-tag">IPFS</span>
+                        <span class="tech-tag">OpenZeppelin</span>
+                        <span class="tech-tag">Web3.0</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Decision Science Track | American Express Campus Challenge 2025</h3>
+                    <p>Built a ranking model pipeline on 1M+ records for the American Express Campus Challenge. Engineered 45+ composite features capturing user behaviour, offer popularity, and temporal CTR signals. Achieved MAP@7 of 0.46+ on validation folds with a fully reproducible pipeline.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Feature Engineering</span>
+                        <span class="tech-tag">GroupKFold</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-section">
+            <h1>Get In Touch</h1>
+            <p>Have a project in mind or want to collaborate? Feel free to reach out!</p>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h2>Connect With Me</h2>
+                <div class="contact-item">
+                    <span>📧</span>
+                    <a href="mailto:vipin.yadav.7217@gmail.com">vipin.yadav.7217@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>📧</span>
+                    <a href="mailto:vipiny23@iitk.ac.in">vipiny23@iitk.ac.in</a>
+                </div>
+                <div class="contact-item">
+                    <span>💼</span>
+                    <a href="https://www.linkedin.com/in/vipin-yadav-a4ab71288/" target="_blank">linkedin.com/in/vipin-yadav</a>
+                </div>
+                <div class="contact-item">
+                    <span>🐙</span>
+                    <a href="https://github.com/BrewerVipin31" target="_blank">github.com/BrewerVipin31</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="/js/page.js"></script>
+</body>
+</html>

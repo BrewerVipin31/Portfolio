@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer - Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,300;1,700&family=Crimson+Pro:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/designer.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#about" onclick="showSection('about')" class="nav-link">About</a>
+        <a href="#projects" onclick="showSection('projects')" class="nav-link">Projects</a>
+        <a href="#contact" onclick="showSection('contact')" class="nav-link">Contact</a>
+        <a href="index.html" class="home">Home</a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-container">
+        <!-- About Section -->
+        <section id="about" class="page-section active">
+            <h1>The Creative Journey</h1>
+            <p>I create visual narratives through frames, motion, and design—capturing moments in stillness, bringing
+                ideas to life through movement, and shaping experiences with color, typography, and thoughtful
+                composition.</p>
+
+            <div class="philosophy-quote">
+                The aim of art is to represent not the outward appearance of things, but their inward significance.
+                <div class="author">~ Aristotle</div>
+            </div>
+
+            <h2>Creative Process</h2>
+            <div class="process-steps">
+
+                <div class="process-step" data-number="1">
+                    <h4>Observe</h4>
+                    <p>
+                        Chase light, linger in silence, and notice the moments that slip past most eyes.
+                        Every story begins in stillness.
+                    </p>
+                </div>
+
+                <div class="process-step" data-number="2">
+                    <h4>Structure</h4>
+                    <p>
+                        Give chaos a rhythm—aligning color, space, and contrast
+                        until emotion finds its shape.
+                    </p>
+                </div>
+
+                <div class="process-step" data-number="3">
+                    <h4>Compose</h4>
+                    <p>
+                        Weave motion and mood together, turning fragments of reality
+                        into frames that breathe and move.
+                    </p>
+                </div>
+
+                <div class="process-step" data-number="4">
+                    <h4>Deliver</h4>
+                    <p>
+                        Release stories into the world—crafted to be felt,
+                        remembered, and quietly carried forward.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- <h2>Expertise</h2>
+            <div class="skills-showcase">
+                <div class="skill-box">
+                    <h4>UI/UX Design</h4>
+                    <p>Creating intuitive flows and delightful interactions that make complex tasks feel effortless.</p>
+                </div>
+                <div class="skill-box">
+                    <h4>Editing</h4>
+                    <p>Crafting beautiful interfaces with careful attention to typography, color, and composition.</p>
+                </div>
+                <div class="skill-box">
+                    <h4>Photography</h4>
+                    <p>Building scalable component libraries and guidelines that ensure consistency across products.</p>
+                </div>
+                <div class="skill-box">
+                    <h4>Branding</h4>
+                    <p>Developing cohesive brand identities that tell compelling stories and connect with audiences.</p>
+                </div>
+                <div class="skill-box">
+                    <h4>Prototyping</h4>
+                    <p>Bringing ideas to life through interactive prototypes that communicate vision and enable testing.
+                    </p>
+                </div>
+                <div class="skill-box">
+                    <h4>User Research</h4>
+                    <p>Conducting interviews, usability tests, and analysis to uncover insights that drive design
+                        decisions.</p>
+                </div>
+            </div> -->
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="page-section">
+            <h1>Featured Work</h1>
+            <p>A selection of projects that showcase my design thinking and creative problem-solving.</p>
+
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Photography</h3>
+                    <p class="project-description">Capturing fleeting moments through light, shadow, and composition.
+                From quiet street frames to expressive portraits, each image tells a story beyond words.</p>
+                    <div class="project-role"><strong>Focus:</strong> Light · Emotion · Composition</div>
+                </div>
+
+                <div class="project-card">
+                    <h3>UI/UX Design</h3>
+                    <p class="project-description">Designing interfaces that feel intuitive and intentional—where typography,
+                color, and space work together to guide and inspire.</p>
+                    <div class="project-role"><strong>Focus:</strong> Layout · Typography · Interaction</div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Video Editing</h3>
+                    <p class="project-description">Turning raw footage into immersive narratives through rhythm,
+                pacing, transitions, and cinematic color grading.</p>
+                    <div class="project-role"><strong>Focus:</strong> Motion · Story · Timing</div>
+                </div>
+
+                <!-- <div class="project-card">
+                    <h3>Sound Production</h3>
+                    <p class="project-description">Crafting atmosphere through layered audio, ambient textures,
+                and carefully shaped sound that elevates visual storytelling.</p>
+                    <div class="project-role"><strong>Focus:</strong> Tone · Mood · Immersion</div>
+                </div> -->
+
+                <!-- <div class="project-card">
+                    <h3>Game Design</h3>
+                    <p class="project-description">Building interactive experiences where mechanics, visuals,
+                and storytelling merge to create engaging digital worlds.</p>
+                    <div class="project-role"><strong>Focus:</strong> Interaction · Systems · Experience</div>
+                </div> -->
+
+                <div class="project-card">
+                    <h3>Posters & Branding</h3>
+                    <p class="project-description">Creating bold visual identities and expressive posters
+                that communicate ideas with clarity and character.</p>
+                    <div class="project-role"><strong>Focus:</strong> Visual Identity · Composition · Impact</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-section">
+            <h1>Let's Create Together</h1>
+            <p>Have a project in mind? I'd love to hear about it and explore how we can bring your vision to life.</p>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tell me about your project</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h2>Connect</h2>
+                <div class="contact-item">
+                    <span>📧</span>
+                    <a href="mailto:vipin.yadav.7217@gmail.com">vipin.yadav.7217@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>🎨</span>
+                    <a href="https://dribbble.com/vipin-yadav-7217" target="_blank">dribbble.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>💼</span>
+                    <a href="https://www.behance.net/d7106" target="_blank">behance.net</a>
+                </div>
+                <div class="contact-item">
+                    <span>📸</span>
+                    <a href="https://www.instagram.com/_vipinyadav31_/" target="_blank">instagram.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>💼</span>
+                    <a href="https://www.linkedin.com/in/vipin-yadav-a4ab71288/" target="_blank">linkedin.com</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/page.js"></script>
+</body>
+
+</html>
