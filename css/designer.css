@@ -420,3 +420,111 @@ button:hover {
         padding: 2rem;
     }
 }
+/* ── Timeline ───────────────────────────────────────────────────────────────── */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #d4485f, #f4a0a0);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-left: 2rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.45rem;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    background: #d4485f;
+    border-radius: 50%;
+    border: 3px solid #fdfbfb;
+    box-shadow: 0 0 0 2px #d4485f;
+}
+
+.timeline-item h4 {
+    color: #d4485f;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+
+.timeline-item .date {
+    color: #b83a4e;
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-bottom: 0.6rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* ── Skills List ────────────────────────────────────────────────────────────── */
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.skill-category {
+    background: white;
+    padding: 1.8rem;
+    border-left: 4px solid #d4485f;
+    box-shadow: 2px 2px 8px rgba(44, 24, 16, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-4px);
+    box-shadow: 4px 6px 16px rgba(44, 24, 16, 0.13);
+}
+
+.skill-category h4 {
+    color: #d4485f;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+
+.skill-category ul {
+    list-style: none;
+}
+
+.skill-category li {
+    color: #4a4a4a;
+    padding: 0.3rem 0;
+    font-size: 1rem;
+    font-family: 'Crimson Pro', serif;
+}
+
+.skill-category li::before {
+    content: '— ';
+    color: #d4485f;
+    opacity: 0.6;
+}
+
+/* ── Responsive additions ───────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .skills-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .timeline-item h4 {
+        font-size: 1.05rem;
+    }
+}
