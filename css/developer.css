@@ -439,3 +439,30 @@ button:hover {
         grid-template-columns: 1fr;
     }
 }
+/* ── Clickable project cards ─────────────────────────────────────────────── */
+a.project-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a.project-card h3 {
+    color: #00ff88;
+}
+
+.card-arrow {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    font-size: 1.1rem;
+    color: #00ff88;
+    opacity: 0;
+    transform: translate(-4px, 4px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+a.project-card:hover .card-arrow {
+    opacity: 1;
+    transform: translate(0, 0);
+}

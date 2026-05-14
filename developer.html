@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/developer.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
-        <a href="#about" onclick="showSection('about')" class="nav-link">About</a>
-        <a href="#projects" onclick="showSection('projects')" class="nav-link">Projects</a>
-        <a href="#contact" onclick="showSection('contact')" class="nav-link">Contact</a>
+        <a href="#about" onclick="showSection('about', event)" class="nav-link">About</a>
+        <a href="#projects" onclick="showSection('projects', event)" class="nav-link">Projects</a>
+        <a href="#contact" onclick="showSection('contact', event)" class="nav-link">Contact</a>
         <a href="index.html" class="home">Home</a>
     </nav>
 
-    <!-- Page Content -->
     <div class="page-container">
         <!-- About Section -->
         <section id="about" class="page-section active">
             <h1>$ whoami</h1>
-            <p>An engineer and systems builder — I work at the intersection of robotics, machine learning, and autonomous systems. I write code that doesn't just run, but thinks, navigates, and adapts in the real world.</p>
+            <p>An engineer and systems builder — I work at the intersection of robotics, machine learning, and
+                autonomous systems. I write code that doesn't just run, but thinks, navigates, and adapts in the real
+                world.</p>
             <div class="philosophy-quote">
                 Somewhere, something incredible is waiting to be known.
                 <div class="author">~ Carl Sagan</div>
@@ -31,20 +34,24 @@
                 <div class="timeline-item">
                     <h4>AI Engineer Intern — CP Plus (Aditya Infotech Ltd.)</h4>
                     <div class="date">May 2025 – Jun 2025</div>
-                    <p>Engineered real-time object detection and facial recognition pipelines for next-gen IP surveillance cameras. Built predictive crowd-density models using video history and deployed the system across 100+ cameras processing 100 GB+ of daily data.</p>
+                    <p>Engineered real-time object detection and facial recognition pipelines for next-gen IP
+                        surveillance cameras. Built predictive crowd-density models using video history and deployed the
+                        system across 100+ cameras processing 100 GB+ of daily data.</p>
                 </div>
                 <div class="timeline-item">
                     <h4>Secretary — Robotics Club, IIT Kanpur</h4>
                     <div class="date">May 2024 – Apr 2025</div>
-                    <p>Led robotics initiatives through workshops and semester-long collaborative projects. Mentored 100+ students across the month-long RoboDive program and represented the club at WRC Delhi and SnT Pavilion.</p>
+                    <p>Led robotics initiatives through workshops and semester-long collaborative projects. Mentored
+                        100+ students across the month-long RoboDive program and represented the club at WRC Delhi and
+                        SnT Pavilion.</p>
                 </div>
                 <div class="timeline-item">
                     <h4>B.Tech Aerospace Engineering — IIT Kanpur</h4>
                     <div class="date">2023 – Present</div>
-                    <p>Junior undergraduate with coursework spanning Data Science & ML, Fluid Mechanics, Dynamics, Electronics, and Fundamentals of Computing. (CPI: 7.3/10).</p>
+                    <p>Junior undergraduate with coursework spanning Data Science & ML, Fluid Mechanics, Dynamics,
+                        Electronics, and Fundamentals of Computing. (CPI: 7.3/10).</p>
                 </div>
             </div>
-
             <h2>Technical Skills</h2>
             <div class="skills-list">
                 <div class="skill-category">
@@ -92,66 +99,32 @@
             <p>Selected work across autonomous systems, machine learning, and decentralised tech.</p>
 
             <div class="project-grid">
-                <div class="project-card">
+
+                <!-- Update each href to the specific GitHub repo URL once uploaded -->
+
+                <a class="project-card"
+                    href="https://drive.google.com/file/d/1_V7x774k1KbedNj8atycl49FEJ9Up2HX/view?usp=sharing"
+                    target="_blank" rel="noopener noreferrer">
+                    <span class="card-arrow">↗</span>
                     <h3>AI Surveillance System</h3>
-                    <p>Engineered real-time object detection and facial recognition for IP cameras at CP Plus. Built predictive models for crowd density and movement trends, deployed across 100+ cameras handling 100 GB+ of daily footage.</p>
+                    <p>Engineered real-time object detection and facial recognition for IP cameras at CP Plus. Built
+                        predictive models for crowd density and movement trends, deployed across 100+ cameras handling
+                        100 GB+ of daily footage.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">PyTorch</span>
                         <span class="tech-tag">Computer Vision</span>
                         <span class="tech-tag">Predictive Modelling</span>
                     </div>
-                </div>
+                </a>
 
-                <div class="project-card">
-                    <h3>Autonomous Mars Rover Navigation</h3>
-                    <p>Built a full autonomous navigation system using YOLOv8 for terrain perception and Canny edge detection for feature recognition. Configured ROS and Gazebo for SLAM-enabled real-time mapping, localization, and collision-free path planning.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">ROS</span>
-                        <span class="tech-tag">Gazebo</span>
-                        <span class="tech-tag">YOLOv8</span>
-                        <span class="tech-tag">SLAM</span>
-                        <span class="tech-tag">Python</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Underwater Garbage Collector</h3>
-                    <p>Designed a robotic system for detecting and collecting marine debris from coral reefs. Built an underwater garbage detector using a neural network with 80% accuracy, under guidance of Prof. Amar Behera, IIT Kanpur.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Neural Networks</span>
-                        <span class="tech-tag">Computer Vision</span>
-                        <span class="tech-tag">Robotics</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Micromouse Maze Solver</h3>
-                    <p>Implemented the Flood Fill algorithm on a competitive bot, cutting maze-solving time by 30%. Optimised motor control with PID for precise wall detection and sharp turns — competed against 50+ global teams at Technoxian WRC 2024 with zero system failures.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">C++</span>
-                        <span class="tech-tag">PID Control</span>
-                        <span class="tech-tag">Flood Fill</span>
-                        <span class="tech-tag">Arduino</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Blockchain Degree Verification DApp</h3>
-                    <p>Built a decentralised application for tamper-proof degree verification on the Ethereum Sepolia testnet. Wrote Solidity smart contracts using OpenZeppelin standards, deployed via Metamask and Remix, with IPFS document storage through Pinata.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Solidity</span>
-                        <span class="tech-tag">Ethereum</span>
-                        <span class="tech-tag">IPFS</span>
-                        <span class="tech-tag">OpenZeppelin</span>
-                        <span class="tech-tag">Web3.0</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
+                <a class="project-card" href="https://github.com/BrewerVipin31/Amex/tree/main" target="_blank"
+                    rel="noopener noreferrer">
+                    <span class="card-arrow">↗</span>
                     <h3>Decision Science Track | American Express Campus Challenge 2025</h3>
-                    <p>Built a ranking model pipeline on 1M+ records for the American Express Campus Challenge. Engineered 45+ composite features capturing user behaviour, offer popularity, and temporal CTR signals. Achieved MAP@7 of 0.46+ on validation folds with a fully reproducible pipeline.</p>
+                    <p>Built a ranking model pipeline on 1M+ records for the American Express Campus Challenge.
+                        Engineered 45+ composite features capturing user behaviour, offer popularity, and temporal CTR
+                        signals. Achieved MAP@7 of 0.46+ on validation folds with a fully reproducible pipeline.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">Scikit-learn</span>
@@ -159,7 +132,75 @@
                         <span class="tech-tag">Feature Engineering</span>
                         <span class="tech-tag">GroupKFold</span>
                     </div>
-                </div>
+                </a>
+
+                <a class="project-card" href="https://github.com/BrewerVipin31/ReinforceGT/tree/main" target="_blank"
+                    rel="noopener noreferrer">
+                    <span class="card-arrow">↗</span>
+                    <h3>ReinforceGT</h3>
+                    <p>Modelled robust trading strategies using game theory and financial engineering. Built a 100-step
+                        binomial tree, simulated option payoff matrices, and applied linear programming backtested on
+                        2022 AAPL data — demonstrating profitability in volatility regimes.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Game Theory</span>
+                        <span class="tech-tag">Linear Programming</span>
+                        <span class="tech-tag">Backtesting</span>
+                        <span class="tech-tag">Financial Engineering</span>
+                    </div>
+                </a>
+
+                <a class="project-card" href="https://github.com/BrewerVipin31" target="_blank"
+                    rel="noopener noreferrer">
+                    <span class="card-arrow">↗</span>
+                    <h3>Blockchain Degree Verification DApp</h3>
+                    <p>Built a decentralised application for tamper-proof degree verification on the Ethereum Sepolia
+                        testnet. Wrote Solidity smart contracts using OpenZeppelin standards, deployed via Metamask and
+                        Remix, with IPFS document storage through Pinata.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Solidity</span>
+                        <span class="tech-tag">Ethereum</span>
+                        <span class="tech-tag">IPFS</span>
+                        <span class="tech-tag">OpenZeppelin</span>
+                        <span class="tech-tag">Web3.0</span>
+                    </div>
+                </a>
+
+                <a class="project-card" href="https://github.com/BrewerVipin31/AutonomousNavigation/tree/main" target="_blank"
+                    rel="noopener noreferrer">
+                    <span class="card-arrow">↗</span>
+                    <h3>Autonomous Mars Rover Navigation</h3>
+                    <p>Built a full autonomous navigation system using YOLOv8 for terrain perception and Canny edge
+                        detection for feature recognition. Configured ROS and Gazebo for SLAM-enabled real-time mapping,
+                        localization, and collision-free path planning.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">ROS</span>
+                        <span class="tech-tag">Gazebo</span>
+                        <span class="tech-tag">YOLOv8</span>
+                        <span class="tech-tag">SLAM</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </a>
+
+                <a class="project-card" href="https://github.com/BrewerVipin31" target="_blank"
+                    rel="noopener noreferrer">
+                    <span class="card-arrow">↗</span>
+                    <h3>Micromouse Maze Solver</h3>
+                    <p>Implemented the Flood Fill algorithm on a competitive bot, cutting maze-solving time by 30%.
+                        Optimised motor control with PID for precise wall detection and sharp turns — competed against
+                        50+ global teams at Technoxian WRC 2024 with zero system failures.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">PID Control</span>
+                        <span class="tech-tag">Flood Fill</span>
+                        <span class="tech-tag">Arduino</span>
+                    </div>
+                </a>
+
+                
+
+                
+
             </div>
         </section>
 
@@ -167,7 +208,6 @@
         <section id="contact" class="page-section">
             <h1>Get In Touch</h1>
             <p>Have a project in mind or want to collaborate? Feel free to reach out!</p>
-
             <form class="contact-form">
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -183,7 +223,6 @@
                 </div>
                 <button type="submit">Send Message</button>
             </form>
-
             <div class="contact-info">
                 <h2>Connect With Me</h2>
                 <div class="contact-item">
@@ -196,7 +235,8 @@
                 </div>
                 <div class="contact-item">
                     <span>💼</span>
-                    <a href="https://www.linkedin.com/in/vipin-yadav-a4ab71288/" target="_blank">linkedin.com/in/vipin-yadav</a>
+                    <a href="https://www.linkedin.com/in/vipin-yadav-a4ab71288/"
+                        target="_blank">linkedin.com/in/vipin-yadav</a>
                 </div>
                 <div class="contact-item">
                     <span>🐙</span>
@@ -208,4 +248,5 @@
 
     <script src="js/page.js"></script>
 </body>
+
 </html>
