@@ -397,26 +397,21 @@ body {
 .profile-container {
     animation: fadeIn 1s ease forwards;
 }
+
 /* ── Mobile swipe hint ─────────────────────────────────────────────────────── */
 .swipe-hint {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .swipe-hint {
-        display: block;
-        position: absolute;
-        bottom: 24px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: rgba(255, 255, 255, 0.6);
-        font-size: 0.78rem;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        z-index: 200;
-        pointer-events: none;
-        mix-blend-mode: difference;
-        white-space: nowrap;
-        animation: pulse 2s ease-in-out infinite;
-    }
+    display: block;
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.78rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    z-index: 200;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    white-space: nowrap;
+    animation: pulse 2s ease-in-out infinite;
 }
